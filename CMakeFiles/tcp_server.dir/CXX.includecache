@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/arvin/Desktop/tcp_server/src/server.cpp
+server.h
+/home/arvin/Desktop/tcp_server/src/server.h
+iostream
+-
+fstream
+-
+sstream
+-
+cstring
+-
+arpa/inet.h
+-
+unistd.h
+-
+
+include/server.h
+vector
+-
+string
+-
+
