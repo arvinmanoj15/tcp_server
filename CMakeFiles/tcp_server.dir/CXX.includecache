@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/arvin/Desktop/tcp_server/src/main.cpp
+server.h
+/home/arvin/Desktop/tcp_server/src/server.h
+
 /home/arvin/Desktop/tcp_server/src/server.cpp
 server.h
 /home/arvin/Desktop/tcp_server/src/server.h
