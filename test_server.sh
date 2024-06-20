@@ -2,7 +2,7 @@
 
 
 # Defining the number of requests, server address and port
-NUM_REQUESTS=10
+NUM_REQUESTS=100
 SERVER_ADDRESS="localhost"
 SERVER_PORT=12345
 
