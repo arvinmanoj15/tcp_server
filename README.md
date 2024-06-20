@@ -37,7 +37,29 @@ The TCP server listens for client connections on port 12345. When a client conne
 
 ## Assumptions
 
-- The `sensor_data.txt` file contains sufficient lines for initial tests.
-- The server runs on a Linux environment.
-- The server handles one client connection at a time for simplicity.
+1. **Sensor Data File:**
+   - The `sensor_data.txt` file is located in the project directory.
+   - Each line in the `sensor_data.txt` file contains a single numeric sensor value.
+
+2. **Environment:**
+   - The server is designed to run in a Linux environment.
+   - The necessary build tools (`cmake`, `make`, `g++`) are installed on the system.
+
+3. **Client Connections:**
+   - The server handles one client connection at a time.
+   - The server can handle multiple client connections sequentially, but not concurrently.
+
+4. **Error Handling:**
+   - The server includes basic error handling for socket operations and file I/O.
+   - In case of errors (e.g., file not found, socket binding issues), appropriate error messages will be displayed, and the server will exit gracefully.
+
+5. **Resource Management:**
+   - The server ensures that client connections are properly closed after handling each request.
+   - Sensor data is loaded into memory at the start of the server and remains in memory for the duration of the server's execution.
+
+6. **Testing:**
+   - The provided `test_server.sh` script is used to test the server with multiple connections.
+   - The script creates multiple client requests without any delay between them to simulate a more intense load on the server.
+
+By following these assumptions, you can ensure that the TCP server operates as expected and handles client connections appropriately. If you encounter any issues or have specific requirements not covered by these assumptions, please adjust the implementation or assumptions accordingly.
 
