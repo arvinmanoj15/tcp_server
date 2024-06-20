@@ -61,5 +61,4 @@ The TCP server listens for client connections on port 12345. When a client conne
    - The provided `test_server.sh` script is used to test the server with multiple connections.
    - The script creates multiple client requests without any delay between them to simulate a more intense load on the server.
 
-By following these assumptions, you can ensure that the TCP server operates as expected and handles client connections appropriately. If you encounter any issues or have specific requirements not covered by these assumptions, please adjust the implementation or assumptions accordingly.
-
+By following these assumptions, you can ensure that the TCP server operates as expected and handles client connections appropriately.
